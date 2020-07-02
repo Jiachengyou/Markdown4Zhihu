@@ -103,7 +103,7 @@ def reduce_image_size():
 def git_ops():
     subprocess.run(["git","add","-A"])
     subprocess.run(["git","commit","-m", "update file "+args.input.stem])
-    subprocess.run(["git","push", "-u", "origin", "master"])
+    subprocess.run(["git","push"])
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser('Please input the file path you want to transfer using --input=""')
